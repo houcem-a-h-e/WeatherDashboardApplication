@@ -1,0 +1,70 @@
+.navbar {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+   background-color: #0F172A;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-input,
+.navbar-button {
+  padding: 10px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-input {
+  flex: 1;
+  max-width: 150px;
+  background-color: #1F293B;
+  color: #ffffff;
+}
+
+
+
+.navbar-button {
+  background-color: #0650f0;
+  color: #fff;
+}
+
+.navbar-button:hover,
+.navbar-button:focus {
+  background-color: #F082AC;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    width: 90%;
+    padding: 15px;
+  }
+
+  .navbar-input,
+  .navbar-button {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    padding: 10px;
+  }
+}

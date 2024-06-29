@@ -1,0 +1,95 @@
+.todayweather, .title {
+  background-color: #0F172A;
+  color: #FFFFFF;
+}
+
+.title > span {
+  background-color: #0F172A;
+}
+
+.subelements {
+  margin-left: 5%;
+  background-color: #0F172A;
+}
+
+.forecast-day {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  padding: 1%;
+  background-color: #0F172A;
+  border-radius: 5px;
+}
+
+.leftinfos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #334155;
+  color: #FFFFFF;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+.weather-details {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #334155;
+  border-radius: 5px;
+}
+
+.weather-details > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #334155;
+  border-radius: 5px;
+}
+
+.individualelment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #334155;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.individualelment .icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.individualelment p {
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.weather-details > .dual > p,
+.weather-details > .temperatureandprecipitation > p,
+.weather-details > .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #334155;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0;
+  width: 100%;
+}
+
+.icontoday {
+  width: 80%;
+}
+
+@media (max-width: 600px) {
+  .leftinfos {
+    display: none;
+  }
+}
